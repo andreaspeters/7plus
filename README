@@ -70,5 +70,9 @@ Other Options (not all options listed):
 
 And do me a great favor: READ THE MANUAL, PLEASE! 73s, Axel.
 
+-------------
 
 This GIT repo is handled by HB9XAR to keep this software alive.
+
+Build for Linux with:
+$ make -f linux.mak clean && make -f linux.mak
