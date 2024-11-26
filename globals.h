@@ -1,3 +1,6 @@
+#ifndef GLOBALS_H
+#define GLOBALS_H
+
 /** globals **/
 extern FILE    *o;
 extern uint    crctab[];
@@ -36,4 +39,6 @@ extern struct m_index *idxptr;
 
 #ifdef __TOS__
   extern int   nowait;
+#endif
+
 #endif

@@ -2,6 +2,9 @@
 >  7plus.h  <
 \*---------*/
 
+#ifndef _7PLUS_H_
+#define _7PLUS_H_
+
 /* Uncomment next line, if compiling on AMIGA! */
 /* #define _AMIGA_ */
 
@@ -250,7 +253,7 @@
  #ifdef __linux__ // SYSV
   #include <unistd.h> /* not sure, if this one is really necessary */
   #include <termio.h>
-  struct termio sg[2];
+  extern struct termio sg[2];
  #else
   #ifdef __NetBSD__
     #include <unistd.h>
@@ -504,4 +507,6 @@ int   join_err       (char *file1, char *file2);
 #else
  #define set_autolf(x)
  #define check_fn(x)
+#endif
+
 #endif

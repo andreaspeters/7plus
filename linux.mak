@@ -33,7 +33,7 @@ DEFINES =
 # - BSD, Ultrix, AT&T System V Release 4, SCO UNIX/XENIX: no special flags
 # - Interactive UNIX 386: -posix
 #SPECFLAGS = -posix
-SPECFLAGS =
+SPECFLAGS = -fno-common
 
 SRCS =  7plus.c  encode.c  correct.c rebuild.c  decode.c \
         extract.c join.c  utils.c  unix.c

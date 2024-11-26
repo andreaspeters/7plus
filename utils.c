@@ -1765,6 +1765,7 @@ int strnicmp (const char *s1, const char *s2, size_t n)
  {
    unsigned char c;
    int fd;
+   struct termio sg[2];   
 
    fd = fileno (stdin);
    if (first)
